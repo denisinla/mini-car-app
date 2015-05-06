@@ -1,0 +1,6 @@
+{
+  "name": "Mini Car App",
+  "description": "A mini car app using Angular",
+  "repository": "https://github.com/denisinla/mini-car-app",
+  "keywords": ["node", "express", "angular"]
+}

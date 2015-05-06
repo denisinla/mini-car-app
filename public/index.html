@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>Car Content</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.2-960.min.css">
+    <link rel="stylesheet" type="text/css" href="css/core.css">
+  </head>
+  <body ng-app="carsApp" ng-controller="carsController">
+  <section class="wrapper">
+   <div class="container">
+     <div class="row">
+       <div class="car-pod-wrapper col-md-12">
+         <div class="car-pod col-sm-12 col-md-5" ng-repeat="cars in carsList | filter:{year:2015}">
+           <ul>
+             <li><strong>Type:</strong> {{cars.carName}}</li>
+             <li><strong>Price:</strong> {{cars.price}}</li>
+             <li><strong>Information:</strong> {{cars.description}}</li>
+             <li><strong>Price:</strong> ${{cars.price}}</li>
+             <li><strong>Location:</strong> {{cars.location}}</li>
+             <li><img ng-src="{{cars.image}}" alt="Car Images"></li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </div>
+  </section>
+  <!-- load dependencies -->
+  <script src="js/libs/angular.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/controllers/carsController.js"></script>
+  <script src="//use.typekit.net/jgd6tna.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  </body>
+</html>

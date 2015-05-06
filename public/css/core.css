@@ -1,0 +1,43 @@
+/* mixins */
+/* customizations */
+body {
+  font: 13px "Proxima Nova", Arial, Helvetica, Sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0; }
+  body .car-pod-wrapper:before, body .car-pod-wrapper:after {
+    content: "";
+    display: table; }
+  body .car-pod-wrapper:after {
+    clear: both; }
+  body .car-pod-wrapper .car-pod {
+    display: inline-block;
+    padding-top: 50px; }
+    body .car-pod-wrapper .car-pod:before, body .car-pod-wrapper .car-pod:after {
+      content: "";
+      display: table; }
+    body .car-pod-wrapper .car-pod:after {
+      clear: both; }
+    @media (min-width: 768px) {
+      body .car-pod-wrapper .car-pod {
+        border-bottom: 1px solid #cccccc; } }
+    @media (min-width: 960px) {
+      body .car-pod-wrapper .car-pod {
+        border-bottom: none; } }
+    body .car-pod-wrapper .car-pod ul {
+      margin: 0;
+      padding: 0; }
+      body .car-pod-wrapper .car-pod ul li {
+        clear: both;
+        list-style: none; }
+    body .car-pod-wrapper .car-pod img {
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      display: block; }
+      @media (min-width: 768px) {
+        body .car-pod-wrapper .car-pod img {
+          max-width: 50%; } }
+      @media (min-width: 960px) {
+        body .car-pod-wrapper .car-pod img {
+          max-width: 100%; } }
